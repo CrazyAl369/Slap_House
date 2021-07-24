@@ -1,0 +1,187 @@
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url("backgrounds/dark_1.jpg");
+  background-position: center;
+  background-size:cover;
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+.brand-homepage {
+  display: flex;
+  justify-content: center;
+}
+
+.brand-homepage h1 {
+  font-size: 85px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  color: white;
+  font-weight:bolder;
+  margin: 5px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  font-size: 30px;
+  /*border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;*/
+  margin: 20px;
+  color: white;
+}
+
+.nav-link-wrapper a {
+  color:white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  /*border-bottom: 1px solid black;*/
+}
+
+.active-nav-link {
+  /*color: aquamarine;
+  border-bottom: 1px solid red;
+  transition: border-bottom 0.5s;*/
+}
+
+.active-nav-link a {
+  color: goldenrod !important;
+}
+
+.slapsouse-main-logo {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.slapsouse-main-logo img {
+  height: 150px;
+  width: 175px;
+}
+
+.youtube-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+}
+
+.social_media img{
+  /*height: 20px;
+  width:22px;*/
+  margin: 10px;
+}
+
+.rights {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+/* Music + Videos CSS Settings */
+
+.category {
+  display: flex;
+  justify-content: left;
+}
+
+.category h2{
+  color:slategray;
+  text-align: left;
+  font-family: Helvetica LT W01 Bold;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.music-content-videos {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  /*border: 1px;
+  color: white;
+  border-style:solid*/
+}
+
+.music-content-videos iframe{
+  height: 315px;
+  width: 460px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  /*border: 5px;
+  border-style: double;
+  border-color: white;*/
+}
+
+.news-main {
+  color: white;
+  max-width: 900px;
+  margin: auto;
+}
+
+.news-date {
+  color: white;
+}
+
+.white-text {
+  color: white;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+}
+
+.coming-soon img {
+  height: 85%;
+  width: 85%;
+  margin: 65px;
+  border: 5px;
+  border-style:double;
+  border-color: white;
+}
+
+.bio-main {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.bio-text h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-text p {
+  color: white;
+  padding: 35px;
+}
+
+.bio-img-1 {
+  margin: 0px;
+}
+
+.bio-img-1 img {
+  margin-top: 30px;
+}
+
+.bio-img-1 p {
+  color: white;
+  margin: 10px;
+}
