@@ -169,3 +169,16 @@ i.fa-aws {
 .fa-youtube:hover {
     color: goldenrod;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+  .music-content-videos {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /*border: 1px;
+    color: white;
+    border-style:solid*/
+  }
+}
