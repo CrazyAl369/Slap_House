@@ -96,7 +96,7 @@ body {
   
   .music-content-videos {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     /*border: 1px;
     color: white;
