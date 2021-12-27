@@ -8,106 +8,71 @@ body {
     position: relative;
     /*overflow: hidden;*/
   }
-  .brand-homepage {
-    justify-content: center;
-    /*background-color: chocolate;*/
-  }
-  .brand-homepage h1 {
-    font-size: 85px;
-    color: black;
-    font-weight:bold;
-    font-family: 'Great Vibes', cursive;
-    filter: drop-shadow(0px 0px 3px white);
-    text-align: center;
-    /*background-color: royalblue;*/
-  } 
-  .brand-homepage p {
-    font-size: 20px;
-    color: white;
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 5px;
-  }
   .slapsouse-main-logo {
-    justify-content: center;
-    /*background: rgba(255, 255, 255, 0.1);*/
-    padding: 0px;
     text-align: center;
+    padding: 10px;
   }
-  
   .slapsouse-main-logo img {
-    height: 200px;
-    width: 280px;
+    height: 300px;
+    width: 380px;
     justify-content: center;
     filter: drop-shadow(0px 0px 1px white);
   }
-  .nav-wrapper {
-    display: flex;
-    justify-content: center;
-    /*background-color: brown;*/
+  header {
   }
-  
-  .nav-link-wrapper {
+  header .nav {
+    display: flex;
+    position: relative;
     height: 22px;
     font-size: 30px;
-    /*border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;*/
-    margin: 40px;
-    color: white;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
   }
-  
-  .nav-link-wrapper a {
+  header .nav li a {
+    color: #fff;
+    font-weight: 450;
     color:white;
     text-decoration: none;
     transition: color 0.5s;
+    margin: 40px;
   }
-  
-  .nav-link-wrapper a:hover {
-    color:goldenrod !important;
-  }
-  .active-nav-link {
-    /*color: aquamarine;
-    border-bottom: 1px solid red;
-    transition: border-bottom 0.5s;*/
-  }
-  .active-nav-link a {
-    color: goldenrod !important;
+  header .nav li a:hover{
+      color:goldenrod !important;
   }
   .bio-main {
-    margin: 0px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
-    /*background-color: royalblue;*/
-    padding: 100px;
+    padding: 20px;
+  }
+  .bio-img-1 {
+  }
+  .bio-img-1 img {
+    width: 800px;
+    margin-top: 30px;
+    filter: drop-shadow(0px 0px 1px white);
+    border-radius: 10px;
+  }
+  .bio-img-1 p {
+    color: white;
+    margin: 10px;
+    font-size: 18px;
   }
   .bio-text {
-    /*background-color: rosybrown;*/
-    width: 65%;
+    color: white;
+    width: 50%;
     padding: 5px;
   }
   .bio-text h1 {
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
   }
   .bio-text p {
-    color: white;
-    padding: 35px;
-    font-size: 20px;
+    font-size: 25px;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bio-img-1 {
-    /*background-color: violet;*/
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -124,15 +89,13 @@ body {
     margin: 10px;
     font-size: 15px;
   }
-  .bio-img-1 img {
-    margin-top: 30px;
-    filter: drop-shadow(0px 0px 1px white);
-    border-radius: 10px;
-  }
-  .bio-img-1 p {
-    color: white;
-    margin: 10px;
-    font-size: 15px;
+  .logoFont h1 {
+    font-size: 85px;
+    color: black;
+    font-weight:bold;
+    font-family: 'Great Vibes', cursive;
+    filter: drop-shadow(0px 0px 3px white);
+    text-align: center;
   }
 .social_media {
     display: flex;
@@ -144,6 +107,8 @@ body {
     text-align: center;
     color: white;
     background-color:black;
+    font-size: 25px;
+    padding:15px
 }
 .rights a:link, .rights a:visited {
     color:white;
@@ -191,40 +156,107 @@ i.fa-aws {
     color: goldenrod;
 }
 
-/* Media Queries*/
+/* Media Queries */
 
-@media (max-width:768px) {
-  .bio-main {
-    display: inline-block;
+@media (max-width: 375px) {
+  .slapsouse-main-logo {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .slapsouse-main-logo img {
+    width: 80px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 0px white);
+  }
+  header {
+    display: flex;
     padding: 0px;
-    margin-top: 100px;
+    margin: 0px;
   }
-  .bio-main h1 {
-    text-align: center;
-    font-size: 35px;
-    color: white;
+  header .nav {
+      display: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding: 0px;
+      margin: 0px;
   }
-  .bio-img-1 {
-    text-align: center;
-    display: none;
+  header .nav.active{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      background-color: rgba(0,0,0,.97);
+      z-index: 5;
   }
-  .bio-img-1-mobile {
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 70px;
+  header .nav li a {
+      margin: 0px;
+      font-size: 25px;
+      color: white;
   }
-  .bio-img-1-mobile img {
-    width: 80%;
-  }
-  .bio-text {
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  .bio-text h1 {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-  }
+  .toggle {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background: url(/images/bars.png) no-repeat center;
+    background-size: cover;
+    filter: invert(1);
+    z-index: 100;
+    right: 40px;
+    margin-top: 30px;
+}
+.toggle.active {
+    position: absolute;
+    background: url(/images/window-close_white.png) no-repeat center;
+    background-size: cover;
+    filter: invert(0);
+    right: 40px;
+}
+.bio-main {
+  display: inline-block;
+  padding: 0px;
+  margin-top: 10px;
+}
+.bio-main h1 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+.bio-img-1 {
+  text-align: center;
+  display: none;
+}
+.bio-img-1-mobile {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.bio-img-1-mobile img {
+  width: 80%;
+}
+.bio-text {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.bio-text h1 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.bio-text p {
+  font-size: 12px;
+}
+.logoFont h1 {
+  font-size: 40px;
+  color: black;
+  font-weight:bold;
+  font-family: 'Great Vibes', cursive;
+  filter: drop-shadow(0px 0px 3px white);
+  text-align: center;
+}
 }
   
