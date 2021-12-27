@@ -8,76 +8,38 @@ body {
     position: relative;
     /*overflow: hidden;*/
   }
-  .brand-homepage {
-    justify-content: center;
-    /*background-color: chocolate;*/
-  }
-  .brand-homepage h1 {
-    font-size: 85px;
-    color: black;
-    font-weight:bold;
-    font-family: 'Great Vibes', cursive;
-    filter: drop-shadow(0px 0px 3px white);
-    text-align: center;
-    /*background-color: royalblue;*/
-  } 
-  .brand-homepage p {
-    font-size: 20px;
-    color: white;
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 5px;
-  }
   .slapsouse-main-logo {
-    justify-content: center;
-    /*background: rgba(255, 255, 255, 0.1);*/
-    padding: 0px;
     text-align: center;
+    padding: 10px;
   }
-  
   .slapsouse-main-logo img {
-    height: 200px;
-    width: 280px;
+    height: 300px;
+    width: 380px;
     justify-content: center;
     filter: drop-shadow(0px 0px 1px white);
   }
-  .nav-wrapper {
-    display: flex;
-    justify-content: center;
-    /*background-color: brown;*/
+  header {
   }
-  
-  .nav-link-wrapper {
+  header .nav {
+    display: flex;
+    position: relative;
     height: 22px;
     font-size: 30px;
-    /*border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;*/
-    margin: 40px;
-    color: white;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
   }
-  
-  .nav-link-wrapper a {
+  header .nav li a {
+    color: #fff;
+    font-weight: 450;
     color:white;
     text-decoration: none;
     transition: color 0.5s;
+    margin: 40px;
   }
-  
-  .nav-link-wrapper a:hover {
-    color:goldenrod !important;
+  header .nav li a:hover{
+      color:goldenrod !important;
   }
-  .active-nav-link {
-    /*color: aquamarine;
-    border-bottom: 1px solid red;
-    transition: border-bottom 0.5s;*/
-  }
-  .active-nav-link a {
-    color: goldenrod !important;
-  }
-
   .news-main {
     color: white;
     max-width: 60%;
@@ -90,8 +52,14 @@ body {
   }
   .news-main h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
+  }
+  .news-main h2 {
+    font-size: 30px;
+  }
+  .news-main p {
+    font-size: 25px;
   }
   .news-main section {
     /*background-color: chartreuse;*/
@@ -101,7 +69,15 @@ body {
   .news-date {
     color: white;
   }
-  
+
+  .logoFont h1 {
+    font-size: 85px;
+    color: black;
+    font-weight:bold;
+    font-family: 'Great Vibes', cursive;
+    filter: drop-shadow(0px 0px 3px white);
+    text-align: center;
+  }
 .social_media {
     display: flex;
     justify-content: center;
@@ -112,6 +88,8 @@ body {
     text-align: center;
     color: white;
     background-color:black;
+    font-size: 25px;
+    padding:15px
 }
 .rights a:link, .rights a:visited {
     color:white;
@@ -157,4 +135,198 @@ i.fa-aws {
 }
 .fa-youtube:hover {
     color: goldenrod;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .slapsouse-main-logo {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .slapsouse-main-logo img {
+    width: 80px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 0px white);
+  }
+  header {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+  header .nav {
+      display: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding: 0px;
+      margin: 0px;
+  }
+  header .nav.active{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      background-color: rgba(0,0,0,.97);
+      z-index: 5;
+  }
+  header .nav li a {
+      margin: 0px;
+      font-size: 25px;
+      color: white;
+  }
+  .toggle {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background: url(/images/bars.png) no-repeat center;
+    background-size: cover;
+    filter: invert(1);
+    z-index: 100;
+    right: 40px;
+    margin-top: 30px;
+}
+.toggle.active {
+    position: absolute;
+    background: url(/images/window-close_white.png) no-repeat center;
+    background-size: cover;
+    filter: invert(0);
+    right: 40px;
+}
+.news-main {
+  color: white;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: brown;*/
+}
+.news-main h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.news-main h2 {
+  font-size: 30px;
+}
+.news-main p {
+  font-size: 25px;
+}
+.news-main section {
+  /*background-color: chartreuse;*/
+  padding: 10px;
+}
+
+.news-date {
+  color: white;
+}
+.logoFont h1 {
+  font-size: 40px;
+  color: black;
+  font-weight:bold;
+  font-family: 'Great Vibes', cursive;
+  filter: drop-shadow(0px 0px 3px white);
+  text-align: center;
+}
+}
+
+@media (max-width: 375px) {
+  .slapsouse-main-logo {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .slapsouse-main-logo img {
+    width: 80px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 0px white);
+  }
+  header {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+  header .nav {
+      display: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding: 0px;
+      margin: 0px;
+  }
+  header .nav.active{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      background-color: rgba(0,0,0,.97);
+      z-index: 5;
+  }
+  header .nav li a {
+      margin: 0px;
+      font-size: 25px;
+      color: white;
+  }
+  .toggle {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background: url(/images/bars.png) no-repeat center;
+    background-size: cover;
+    filter: invert(1);
+    z-index: 100;
+    right: 40px;
+    margin-top: 30px;
+}
+.toggle.active {
+    position: absolute;
+    background: url(/images/window-close_white.png) no-repeat center;
+    background-size: cover;
+    filter: invert(0);
+    right: 40px;
+}
+.news-main {
+  color: white;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*background-color: brown;*/
+}
+.news-main h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.news-main h2 {
+  font-size: 30px;
+}
+.news-main p {
+  font-size: 25px;
+}
+.news-main section {
+  /*background-color: chartreuse;*/
+  padding: 10px;
+}
+
+.news-date {
+  color: white;
+}
+.logoFont h1 {
+  font-size: 40px;
+  color: black;
+  font-weight:bold;
+  font-family: 'Great Vibes', cursive;
+  filter: drop-shadow(0px 0px 3px white);
+  text-align: center;
+}
 }
