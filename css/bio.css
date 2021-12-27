@@ -158,6 +158,108 @@ i.fa-aws {
 
 /* Media Queries */
 
+@media (max-width: 1024px) {
+  .slapsouse-main-logo {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .slapsouse-main-logo img {
+    width: 80px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 0px white);
+  }
+  header {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+  header .nav {
+      display: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding: 0px;
+      margin: 0px;
+  }
+  header .nav.active{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      background-color: rgba(0,0,0,.97);
+      z-index: 5;
+  }
+  header .nav li a {
+      margin: 0px;
+      font-size: 25px;
+      color: white;
+  }
+  .toggle {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background: url(/images/bars.png) no-repeat center;
+    background-size: cover;
+    filter: invert(1);
+    z-index: 100;
+    right: 40px;
+    margin-top: 30px;
+}
+.toggle.active {
+    position: absolute;
+    background: url(/images/window-close_white.png) no-repeat center;
+    background-size: cover;
+    filter: invert(0);
+    right: 40px;
+}
+.bio-main {
+  display: inline-block;
+  padding: 0px;
+  margin-top: 10px;
+}
+.bio-main h1 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+.bio-img-1 {
+  text-align: center;
+  display: none;
+}
+.bio-img-1-mobile {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.bio-img-1-mobile img {
+  width: 80%;
+}
+.bio-text {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.bio-text h1 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.bio-text p {
+  font-size: 12px;
+}
+.logoFont h1 {
+  font-size: 40px;
+  color: black;
+  font-weight:bold;
+  font-family: 'Great Vibes', cursive;
+  filter: drop-shadow(0px 0px 3px white);
+  text-align: center;
+}
+}
+
 @media (max-width: 375px) {
   .slapsouse-main-logo {
     margin-bottom: 20px;
