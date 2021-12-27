@@ -156,7 +156,7 @@ i.fa-aws {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .slapsouse-main-logo {
     margin-bottom: 20px;
     display: flex;
@@ -170,7 +170,6 @@ i.fa-aws {
     display: flex;
     padding: 0px;
     margin: 0px;
-    background-color: tomato;
   }
   header .nav {
       display: none;
@@ -215,7 +214,101 @@ i.fa-aws {
     right: 40px;
 }
 section {
-  background-color: wheat;
+}
+.category {
+  display:inline;
+  justify-content: center;
+}
+
+.category h2{
+  color:slategray;
+  text-align: left;
+  font-family: Helvetica LT W01 Bold;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+.category h2:hover {
+  color:goldenrod !important;
+}
+.category p {
+  font-size: 25px;
+  width: 75%;
+  padding: 40px;
+  text-align: center;
+}
+.elfsight-app-d4d29982-fd45-40d1-91bf-9c4dd4eda823 {
+  width: 90%;
+}
+  .logoFont h1 {
+    font-size: 40px;
+    color: black;
+    font-weight:bold;
+    font-family: 'Great Vibes', cursive;
+    filter: drop-shadow(0px 0px 3px white);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .slapsouse-main-logo {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .slapsouse-main-logo img {
+    width: 80px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 0px white);
+  }
+  header {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+  header .nav {
+      display: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding: 0px;
+      margin: 0px;
+  }
+  header .nav.active{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      background-color: rgba(0,0,0,.97);
+      z-index: 5;
+  }
+  header .nav li a {
+      margin: 0px;
+      font-size: 25px;
+      color: white;
+  }
+  .toggle {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    background: url(/images/bars.png) no-repeat center;
+    background-size: cover;
+    filter: invert(1);
+    z-index: 100;
+    right: 40px;
+    margin-top: 30px;
+}
+.toggle.active {
+    position: absolute;
+    background: url(/images/window-close_white.png) no-repeat center;
+    background-size: cover;
+    filter: invert(0);
+    right: 40px;
+}
+section {
 }
 .category {
   display:inline;
