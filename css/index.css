@@ -40,7 +40,7 @@ body {
     padding: 15px;
     border-radius: 20px;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-left: auto;
     margin-right: auto;
   }
@@ -70,7 +70,6 @@ body {
     text-align: center;
     padding: 10px;
   }
-  
   .slapsouse-main-logo img {
     height: 300px;
     width: 380px;
